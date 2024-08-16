@@ -35,11 +35,11 @@ angular.module('sampleApp', [])
   .controller('SampleListController', function() {
     var sampleList = this;
     sampleList.sampletodos = [
-      {text:'First Item', done:false, name: 'li1'},
-      {text:'Second Item', done:false, name: 'li2'},
-      {text:'Third Item', done:false, name: 'li3'},
-      {text:'Fourth Item', done:false, name: 'li4'},
-      {text:'Fifth Item', done:false, name: 'li5'}];
+      {text:'Apple', done:false, name: 'liApple'},
+      {text:'Banana', done:false, name: 'liBanana'},
+      {text:'Grape', done:false, name: 'liGrape'},
+      {text:'Strawberry', done:false, name: 'liStrawberry'},
+      {text:'Pear', done:false, name: 'liPear'}];
 
     sampleList.addsampletodo = function() {
       sampleList.sampletodos.push({text:sampleList.sampletodoText, done:false, name:'li'+(sampleList.sampletodos.length+1)});
